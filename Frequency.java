@@ -12,7 +12,7 @@ public class Frequency {
 		String sentence;
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a string");
-		sentence=sc.next();
+		sentence=sc.nextLine();
 		System.out.println("Enter a character to be checked");
 		 char character=sc.next().charAt(0);
 		int frequency=Freq(sentence,character);
