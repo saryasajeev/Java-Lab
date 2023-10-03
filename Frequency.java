@@ -16,7 +16,12 @@ public class Frequency {
 		System.out.println("Enter a character to be checked");
 		 char character=sc.next().charAt(0);
 		int frequency=Freq(sentence,character);
+		if(frequency==0) {
+			System.out.println("The character is not present in the string");
+		}
+		else {
 		System.out.println("The no of occurences of the character is "+frequency);
+		}
 		
 	}
 	static int Freq(String sentence,char Character) {
