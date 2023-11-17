@@ -2,9 +2,9 @@ package javaLab;
 
 abstract class Animal{
 	protected int legs;
-	protected Animal(int legs) {//constructor-if it has a same variable as that of class variable
-		this.legs=legs;//this.class variable=method argument.
-		//this is used to differentiate the class variable and argument since both have same name
+	protected Animal(int legs) {
+		this.legs=legs;
+		
 	}
 	public abstract void eat();
 	public void walk() {
@@ -12,15 +12,15 @@ abstract class Animal{
 	}
 }
 class Spider extends Animal{
-	public Spider(){//to call the constructor
-		super(8);//the value 8 is passed to walk() method
+	public Spider(){
+		super(8);
 	}
-	//override
+	
 	public void eat() {
 		System.out.println("the spider eats insect");
 	}
 }
-interface Pet{//in interface by default all the methods are abstract and all variables are public
+interface Pet{
 	String getName();
 	void setName(String Name);
 	void play();
@@ -30,7 +30,7 @@ class Cat extends Animal implements Pet{
 	public Cat() {
 		super(4);
 	}
-	//override
+	
 	public void eat() {
 		System.out.println("The cat is eating");
 	}
