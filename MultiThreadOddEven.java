@@ -13,20 +13,14 @@ class NumberManager{
 		while(!numberGenerated  || generatedNumber %2!=0) {
 			wait();
 		}
-		for(int i=2;i<=generatedNumber;i+=2) {
-			System.out.println(i+" ");
-			
-		}
+		System.out.println("Cube of the number:"+generatedNumber*generatedNumber*generated number);
 		numberGenerated=false;
 	}
 	public synchronized void printOddNumbers() throws InterruptedException {
 		while(!numberGenerated  || generatedNumber %2==0) {
 			wait();
 		}
-		for(int i=1;i<=generatedNumber;i+=2) {
-			System.out.println(i+" ");
-			
-		}
+		System.out.println("Square of the number:"+generatedNumber*generatedNumber);
 		
 		numberGenerated=false;
 }
