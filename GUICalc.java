@@ -51,10 +51,10 @@ class GUICalc extends JFrame implements ActionListener {
             buttonPanel.add(numberButtons[i]);
             numberButtons[i].addActionListener(this);
         }
-        multiplyButton = new JButton("*");
+        multiplyButton = new JButton("x");
         buttonPanel.add(multiplyButton);
         multiplyButton.addActionListener(this);
-        divideButton = new JButton("/");
+        divideButton = new JButton("%");
         buttonPanel.add(divideButton);
         divideButton.addActionListener(this);
         equalsButton = new JButton("=");
@@ -94,11 +94,11 @@ class GUICalc extends JFrame implements ActionListener {
                 isOperator = true;
             }
             if (clickedButton == multiplyButton) {
-                operator = '*';
+                operator = 'x';
                 isOperator = true;
             }
             if (clickedButton == divideButton) {
-                operator = '/';
+                operator = '%';
                 isOperator = true;
             }
 
@@ -125,10 +125,10 @@ class GUICalc extends JFrame implements ActionListener {
             case '-':
                 operand1 -= operand2;
                 break;
-            case '*':
+            case 'x':
                 operand1 *= operand2;
                 break;
-            case '/':
+            case '%':
                 if (operand2 != 0) {
                     operand1 /= operand2;
                 } else {
