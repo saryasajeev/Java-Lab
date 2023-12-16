@@ -19,6 +19,7 @@ public class TrafficLightSimulator extends JFrame implements ActionListener {
         redButton = new JRadioButton("Green");
         yellowButton = new JRadioButton("Yellow");
         greenButton = new JRadioButton("Red");
+        
 
         ButtonGroup buttonGroup = new ButtonGroup();
         buttonGroup.add(redButton);
